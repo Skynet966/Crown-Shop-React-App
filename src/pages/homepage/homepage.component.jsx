@@ -1,11 +1,11 @@
 import Directory from '../../components/directory/directory.component';
 
-import './homepage.styles.sass'
+import './homepage.styles.sass';
 
 const HomePage = () => (
-    <div className='homepage'>
-        <Directory />
-    </div>
-)
+	<div className='homepage'>
+		<Directory />
+	</div>
+);
 
 export default HomePage;
