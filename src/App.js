@@ -7,6 +7,8 @@ import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import Shop from './pages/shop/shop.component';
 import SignInAndSignUpPage from './pages/sign-in-and-sing-up/sign-in-and-sing-up.component';
+import CheckoutPage from './pages/checkout/checkout.component';
+
 import Header from './components/header/header.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.action';
@@ -33,7 +35,6 @@ class App extends React.Component {
 	componentWillUnmount() {
 		this.unsubscribeFromAuth();
 	}
-
 	render() {
 		return (
 			<div className='App'>
@@ -52,6 +53,7 @@ class App extends React.Component {
 							)
 						}
 					/>
+					<Route exact path='/checkout' component={CheckoutPage} />
 				</Switch>
 			</div>
 		);
