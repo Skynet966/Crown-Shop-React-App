@@ -7,14 +7,39 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Crown clothing is a place where you can buy all category clothing for you and your loved once with very high quality of products."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <style>
+      body{
+          background: whitesmoke;
+      }
+      .no-script-container{
+        background-color: #1fc8db;
+        background-image: linear-gradient(140deg, #000000 0%, #c284ae8c 50%, #724fa99e 75%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Open Sans Condensed';
+        border-radius: 27px;
+        box-shadow: inset 0 0 5px 0px black;
+        text-transform: capitalize;
+        padding: 1em;
+      }
+      .no-script-container>.title{
+        color: red;
+        text-shadow: 0 0 5px #060303;
+      }
+      .no-script-container>.subtitle{
+        color: #8ced64;
+        font-size: x-large;
+        padding: 1em;
+        text-shadow: 0 0 5px black;
+      }
+    </style>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -30,7 +55,12 @@
     <title>Crown Clothing</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <div class="no-script-container">
+        <h1 class="title">JavaScript is Disabled...!</h1>
+        <p class="subtitle">You need to enable JavaScript to run this app.</p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
