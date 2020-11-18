@@ -4,9 +4,10 @@ const INITIAL_STATE = {
 	sections: SectionsData
 };
 
-export default (state = INITIAL_STATE, { type }) => {
+const directoryReducer = (state = INITIAL_STATE, { type }) => {
 	switch (type) {
 		default:
 			return state;
 	}
 };
+export default directoryReducer;
